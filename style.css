@@ -6,19 +6,18 @@
 }
 body
 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   background: linear-gradient(45deg, #8460ed, #ff1254); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #8460ed, #ff1252);
 }
 .menu
 {
     position: relative;
     width: 200px;
     height: 200px;
-    
-    display: flex;
+       display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -34,7 +33,7 @@ body
 }
 .menu.active li
 {
-    transform: rotate(calc(360deg /  8 * var(--i)));
+    transform: rotate(calc(360deg / 8 * var(--i)));
 }
 .menu li a
 {
@@ -52,9 +51,8 @@ body
 }
 .menu li a:hover
 {
-    color: #ff1257;
+    color: #ff1252;
 }
-
 .toggle
 {
     position: absolute;
@@ -69,9 +67,9 @@ body
     cursor: pointer;
     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.15);
     font-size: 2em;
-    transition: 1.25s;
+    transition: transform 1.25s;
 }
 .menu.active .toggle
 {
-    transform: rotate(315deg);
+   transform: rotate(315deg); 
 }
